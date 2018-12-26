@@ -1,0 +1,96 @@
+Date,Season,home,visitor,hgoal,vgoal,result,points
+2008-12-21,2008,Arsenal,Liverpool,1,1,D,1
+2008-08-31,2008,Aston Villa,Liverpool,0,0,D,1
+2008-12-06,2008,Blackburn Rovers,Liverpool,1,3,A,3
+2008-11-15,2008,Bolton Wanderers,Liverpool,0,2,A,3
+2008-10-26,2008,Chelsea,Liverpool,0,1,A,3
+2008-09-27,2008,Everton,Liverpool,0,2,A,3
+2009-04-04,2008,Fulham,Liverpool,0,1,A,3
+2009-04-25,2008,Hull City,Liverpool,1,3,A,3
+2009-04-21,2008,Liverpool,Arsenal,4,4,D,1
+2009-03-22,2008,Liverpool,Aston Villa,5,0,H,3
+2009-04-11,2008,Liverpool,Blackburn Rovers,4,0,H,3
+2008-12-26,2008,Liverpool,Bolton Wanderers,3,0,H,3
+2009-02-01,2008,Liverpool,Chelsea,2,0,H,3
+2009-01-19,2008,Liverpool,Everton,1,1,D,1
+2008-11-22,2008,Liverpool,Fulham,0,0,D,1
+2008-12-13,2008,Liverpool,Hull City,2,2,D,1
+2009-02-22,2008,Liverpool,Manchester City,1,1,D,1
+2008-09-13,2008,Liverpool,Manchester United,2,1,H,3
+2008-08-23,2008,Liverpool,Middlesbrough,2,1,H,3
+2009-05-03,2008,Liverpool,Newcastle United,3,0,H,3
+2008-10-29,2008,Liverpool,Portsmouth,1,0,H,3
+2008-09-20,2008,Liverpool,Stoke City,0,0,D,1
+2009-03-03,2008,Liverpool,Sunderland,2,0,H,3
+2009-05-24,2008,Liverpool,Tottenham Hotspur,3,1,H,3
+2008-11-08,2008,Liverpool,West Bromwich Albion,3,0,H,3
+2008-12-01,2008,Liverpool,West Ham United,0,0,D,1
+2008-10-18,2008,Liverpool,Wigan Athletic,3,2,H,3
+2008-10-05,2008,Manchester City,Liverpool,2,3,A,3
+2009-03-14,2008,Manchester United,Liverpool,1,4,A,3
+2009-02-28,2008,Middlesbrough,Liverpool,2,0,H,0
+2008-12-28,2008,Newcastle United,Liverpool,1,5,A,3
+2009-02-07,2008,Portsmouth,Liverpool,2,3,A,3
+2009-01-10,2008,Stoke City,Liverpool,0,0,D,1
+2008-08-16,2008,Sunderland,Liverpool,0,1,A,3
+2008-11-01,2008,Tottenham Hotspur,Liverpool,2,1,H,0
+2009-05-17,2008,West Bromwich Albion,Liverpool,0,2,A,3
+2009-05-09,2008,West Ham United,Liverpool,0,3,A,3
+2009-01-28,2008,Wigan Athletic,Liverpool,1,1,D,1
+2013-11-02,2013,Arsenal,Liverpool,2,0,H,0
+2013-08-24,2013,Aston Villa,Liverpool,0,1,A,3
+2014-03-22,2013,Cardiff City,Liverpool,3,6,A,3
+2013-12-29,2013,Chelsea,Liverpool,2,1,H,0
+2014-05-05,2013,Crystal Palace,Liverpool,3,3,D,1
+2013-11-23,2013,Everton,Liverpool,3,3,D,1
+2014-02-12,2013,Fulham,Liverpool,2,3,A,3
+2013-12-01,2013,Hull City,Liverpool,3,1,H,0
+2014-02-08,2013,Liverpool,Arsenal,5,1,H,3
+2014-01-18,2013,Liverpool,Aston Villa,2,2,D,1
+2013-12-21,2013,Liverpool,Cardiff City,3,1,H,3
+2014-04-27,2013,Liverpool,Chelsea,0,2,A,0
+2013-10-05,2013,Liverpool,Crystal Palace,3,1,H,3
+2014-01-28,2013,Liverpool,Everton,4,0,H,3
+2013-11-09,2013,Liverpool,Fulham,4,0,H,3
+2014-01-01,2013,Liverpool,Hull City,2,0,H,3
+2014-04-13,2013,Liverpool,Manchester City,3,2,H,3
+2013-09-01,2013,Liverpool,Manchester United,1,0,H,3
+2014-05-11,2013,Liverpool,Newcastle United,2,1,H,3
+2013-12-04,2013,Liverpool,Norwich City,5,1,H,3
+2013-09-21,2013,Liverpool,Southampton,0,1,A,0
+2013-08-17,2013,Liverpool,Stoke City,1,0,H,3
+2014-03-26,2013,Liverpool,Sunderland,2,1,H,3
+2014-02-23,2013,Liverpool,Swansea City,4,3,H,3
+2014-03-30,2013,Liverpool,Tottenham Hotspur,4,0,H,3
+2013-10-26,2013,Liverpool,West Bromwich Albion,4,1,H,3
+2013-12-07,2013,Liverpool,West Ham United,4,1,H,3
+2013-12-26,2013,Manchester City,Liverpool,2,1,H,0
+2014-03-16,2013,Manchester United,Liverpool,0,3,A,3
+2013-10-19,2013,Newcastle United,Liverpool,2,2,D,1
+2014-04-20,2013,Norwich City,Liverpool,2,3,A,3
+2014-03-01,2013,Southampton,Liverpool,0,3,A,3
+2014-01-12,2013,Stoke City,Liverpool,3,5,A,3
+2013-09-29,2013,Sunderland,Liverpool,1,3,A,3
+2013-09-16,2013,Swansea City,Liverpool,2,2,D,1
+2013-12-15,2013,Tottenham Hotspur,Liverpool,0,5,A,3
+2014-02-02,2013,West Bromwich Albion,Liverpool,1,1,D,1
+2014-04-06,2013,West Ham United,Liverpool,1,2,A,3
+2018-08-12,2018,Liverpool,West Ham,4,0,H,3
+2018-08-20,2018,Crystal Palace,Liverpool,0,2,A,3
+2018-08-25,2018,Liverpool,Brighton,1,0,H,3
+2018-09-01,2018,Leicester City,Liverpool,1,2,A,3
+2018-09-15,2018,Tottenham,Liverpool,1,2,A,3
+2018-09-22,2018,Liverpool,Southampton,3,0,H,3
+2018-09-29,2018,Chelsea,Liverpool,1,1,D,1
+2018-10-07,2018,Liverpool,Manchester City,0,0,D,1
+2018-10-20,2018,Huddersfield,Liverpool,0,1,A,3
+2018-10-27,2018,Liverpool,Cardiff City,4,1,H,3
+2018-11-03,2018,Arsenal,Liverpool,1,1,D,1
+2018-11-11,2018,Liverpool,Fulham,2,0,H,3
+2018-11-24,2018,Watford,Liverpool,0,3,A,3
+2018-12-02,2018,Liverpool,Everton,1,0,H,3
+2018-12-05,2018,Burnley FC,Liverpool,1,3,A,3
+2018-12-08,2018,Bournemouth,Liverpool,0,4,A,3
+2018-12-16,2018,Liverpool,Manchester United,3,1,H,3
+2018-12-21,2018,Wolverhampton,Liverpool,0,2,A,3
+2018-12-26,2018,Liverpool,Newcastle,4,0,H,3
