@@ -5,23 +5,31 @@ date: "12/26/2018"
 output: github_document
 ---
 
-```{r}
+```{r warning=FALSE, message=FALSE}
 library(tidyverse) 
 library(googlesheets)
+library(knitr)
+```
+
+```{r echo=FALSE}
+opts_chunk$set(warning = FALSE)
 ```
 
 ```{r}
-library(devtools)
-install_github('jalapic/engsoccerdata', username = "jalapic")
+# Install `engsoccerdata` from GitHub
+# library(devtools)
+# install_github('jalapic/engsoccerdata', username = "jalapic")
 library(engsoccerdata)
 ```
 
-```{r setup, include=FALSE}
+```{r}
+# Load England data
 england <- as.tibble(england)
 ```
 
 ```{r}
-lfc <- england %>% 
+# Subset Liverpool results 
+lfc_past <- england %>% 
   filter(Season %in% c(2008, 2013, 2018), 
          home == "Liverpool" | visitor == "Liverpool") %>% 
   select(-c(FT, division, tier, totgoal, goaldif)) %>% 
@@ -45,6 +53,7 @@ lfc_18 <- gs_key(key) %>%
 ```
 
 ```{r}
+
 lfc_18 <- lfc_18 %>% 
   mutate(result = "D",
          result = ifelse(home == "Liverpool" & hgoal > vgoal, "H", result), 
@@ -58,7 +67,13 @@ lfc_18 <- lfc_18 %>%
          points = ifelse(result == "D", 1, points)) 
 ```
 
-```{r join data}
+```{r combine data}
+# Combine all seasons
+lfc <- bind_rows(lfc_past, lfc_18)
+```
 
+```{r write data}
+# Write dataset. This updates in data.world
+write_csv(lfc, "output/lfc_title_runs.csv")
 ```
 
