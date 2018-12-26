@@ -76,9 +76,11 @@ lfc_18 <- lfc_18 %>%
 ```
 
 ``` r
+# Combine all seasons
 lfc <- bind_rows(lfc_past, lfc_18)
 ```
 
 ``` r
+# Write dataset. This updates in data.world
 write_csv(lfc, "output/lfc_title_runs.csv")
 ```
