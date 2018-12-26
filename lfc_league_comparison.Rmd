@@ -74,6 +74,6 @@ lfc <- bind_rows(lfc_past, lfc_18)
 
 ```{r write data}
 # Write dataset. This updates in data.world
-write_csv(lfc, "output/lfc_title_runs.csv")
+write_csv(lfc, "output/lfc_title_challenge.csv")
 ```
 
