@@ -1,0 +1,19 @@
+---
+title: "Liverpool League Comparison"
+author: "Ryan Estrellado"
+date: "12/26/2018"
+output: html_document
+---
+
+```{r}
+library(devtools)
+library(tidyverse)
+```
+
+```{r}
+
+```
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
