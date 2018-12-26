@@ -44,3 +44,21 @@ lfc_18 <- gs_key(key) %>%
   gs_read()
 ```
 
+```{r}
+lfc_18 <- lfc_18 %>% 
+  mutate(result = "D",
+         result = ifelse(home == "Liverpool" & hgoal > vgoal, "H", result), 
+         result = ifelse(visitor == "Liverpool" & hgoal < vgoal, "A", result), 
+         points = 0, 
+         # Home wins
+         points = ifelse(home == "Liverpool" & result == "H", 3, points), 
+         # Away wins
+         points = ifelse(visitor == "Liverpool" & result == "A", 3, points), 
+         # Draws
+         points = ifelse(result == "D", 1, points)) 
+```
+
+```{r join data}
+
+```
+
