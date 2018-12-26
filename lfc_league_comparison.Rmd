@@ -6,14 +6,25 @@ output: html_document
 ---
 
 ```{r}
-library(devtools)
 library(tidyverse)
 ```
 
 ```{r}
-
+library(devtools)
+install_github('jalapic/engsoccerdata', username = "jalapic")
+library(engsoccerdata)
 ```
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+england <- as.tibble(england)
 ```
+
+```{r}
+lfc <- england %>% 
+  filter(Season %in% c(2008, 2013, 2018), 
+         home == "Liverpool" | visitor == "Liverpool") %>% 
+  select() %>% 
+  mutate(points = 0, 
+         points = ifelse(home == "Liverpool" & hgoal > vgoal, 3, points))
+```
+
