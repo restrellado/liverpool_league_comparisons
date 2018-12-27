@@ -69,11 +69,27 @@ lfc_18 <- lfc_18 %>%
 
 ```{r combine data}
 # Combine all seasons
-lfc <- bind_rows(lfc_past, lfc_18)
+lfc <- bind_rows(lfc_past, lfc_18) %>% 
+  arrange(Date)
 ```
 
 ```{r write data}
 # Write dataset. This updates in data.world
 write_csv(lfc, "output/lfc_title_challenge.csv")
+```
+
+```{r}
+# Plot point total across games 
+lfc %>% 
+  group_by(Season) %>%
+  mutate(game = 1:length(Season), 
+         cum_points = cumsum(points)) %>%
+  ungroup() %>% 
+  ggplot(data = ., aes(x = game, y = cum_points, group = as.character(Season))) + 
+  geom_freqpoly(stat = "identity", aes(color = as.character(Season)), size = 1) + 
+  labs(title = "Comparison of Point Totals", 
+       color = "Season", 
+       x = "Game", 
+       y = "Points")
 ```
 

@@ -77,10 +77,28 @@ lfc_18 <- lfc_18 %>%
 
 ``` r
 # Combine all seasons
-lfc <- bind_rows(lfc_past, lfc_18)
+lfc <- bind_rows(lfc_past, lfc_18) %>% 
+  arrange(Date)
 ```
 
 ``` r
 # Write dataset. This updates in data.world
 write_csv(lfc, "output/lfc_title_challenge.csv")
 ```
+
+``` r
+# Plot point total across games 
+lfc %>% 
+  group_by(Season) %>%
+  mutate(game = 1:length(Season), 
+         cum_points = cumsum(points)) %>%
+  ungroup() %>% 
+  ggplot(data = ., aes(x = game, y = cum_points, group = as.character(Season))) + 
+  geom_freqpoly(stat = "identity", aes(color = as.character(Season)), size = 1) + 
+  labs(title = "Comparison of Point Totals", 
+       color = "Season", 
+       x = "Game", 
+       y = "Points")
+```
+
+![](lfc_league_comparison_files/figure-markdown_github/unnamed-chunk-8-1.png)
