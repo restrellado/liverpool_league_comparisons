@@ -93,3 +93,67 @@ lfc %>%
        y = "Points")
 ```
 
+## Compare Goals Scored Across Seasons
+
+```{r}
+# Transform dataset 
+home_goals <- lfc %>% 
+  filter(home == "Liverpool") %>% 
+  mutate(home_away = "home") %>% 
+  select(Date, Season, oppo = visitor, home_away, goals = hgoal)
+
+away_goals <- lfc %>% 
+  filter(visitor == "Liverpool") %>% 
+  mutate(home_away = "visitor") %>% 
+  select(Date, Season, oppo = home, home_away, goals = vgoal)
+
+# Make combined home and away dataset 
+lfc_goals <- bind_rows(home_goals, away_goals) %>% 
+  mutate_at(vars(Season, oppo, home_away), funs(as.factor))
+```
+
+```{r}
+# Model goals per game
+model_goals <- lm(goals ~ Season, data = lfc_goals)
+summary(model_goals)
+```
+
+## Compare Goals Conceded Across Seasons 
+
+```{r}
+# Transform dataset 
+home_goals_c <- lfc %>% 
+  filter(home == "Liverpool") %>% 
+  mutate(home_away = "home") %>% 
+  select(Date, Season, oppo = visitor, home_away, goals = vgoal)
+
+away_goals_c <- lfc %>% 
+  filter(visitor == "Liverpool") %>% 
+  mutate(home_away = "visitor") %>% 
+  select(Date, Season, oppo = home, home_away, goals = hgoal)
+
+# Make combined home and away dataset 
+lfc_goals_c <- bind_rows(home_goals_c, away_goals_c) %>% 
+  mutate_at(vars(Season, oppo, home_away), funs(as.factor))
+```
+
+```{r}
+ggplot(data = lfc_goals, aes(x = Season, y = goals)) + 
+  geom_boxplot() + 
+  labs(title = "Liverpool FC: Median Goals Scored Per Game", 
+       x = "")
+```
+
+```{r}
+# Model goals per game
+model_goals_c <- lm(goals ~ Season, data = lfc_goals_c)
+summary(model_goals_c)
+```
+
+```{r}
+ggplot(data = lfc_goals_c, aes(x = Season, y = goals)) + 
+  geom_boxplot() + 
+  labs(title = "Liverpool FC: Median Goals Conceded Per Game", 
+       x = "")
+```
+
